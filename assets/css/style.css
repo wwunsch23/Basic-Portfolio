@@ -82,6 +82,7 @@ div.content {
     background-color: #fff;
     padding: 30px;
     overflow: hidden;
+    border: 1px solid #dddddd;
 }
 
 div.aboutHeader {
@@ -89,6 +90,21 @@ div.aboutHeader {
     width: 100%;
     border-bottom: 1px solid #cccccc;
     overflow: hidden;
+}
+
+div.blue {
+    background-color: #4AB4DD;
+    height: 96px;
+    position: relative;
+}
+
+div.grey {
+    background-color: #666;
+    height: 80px;
+    padding-top: 16px;
+    position: absolute;
+    top: 16px;
+    width: 100%;
 }
 
 img {
@@ -99,7 +115,17 @@ img {
     width: 20%;
 }
 
-p {
+.content p {
     padding-top: 20px;
     margin: 0;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    padding-top: 40px;
+    text-align: center;
+    color:#cccccc;
 }
