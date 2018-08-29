@@ -34,6 +34,7 @@ li a {
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 li a:hover:not(.active) {
@@ -44,7 +45,21 @@ li a:hover:not(.active) {
     color: #4aaaa5;
 }
 
+nav {
+    overflow: hidden;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    background-color: #fff;
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+}
+
 h1 {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
     font-size: 2em; 
     float: left;
     margin: 0;
@@ -56,68 +71,65 @@ h1 {
     padding: 30px; 
 }
 
-#about {
-    color: #4aaaa5;
-    _padding-bottom: 20px;
-    _width: 100%;
-    _border-bottom: 1px solid #cccccc;
-}
-
-header {
-    overflow: hidden;
-    font-family: 'Georgia', Times, "Times New Roman", serif;
-    background-color: #fff;
-    width: 960px;
-    margin: 0 auto;
-}
-
-div.full {
-    border-bottom: 1px solid #cccccc;
-    background-color: #fff;
-}
-
-div.content {
-    width:960px;
+#content {
+    max-width: 960px;
     margin: 20px auto;
+    margin-bottom:40px;
     background-color: #fff;
     padding: 30px;
     overflow: hidden;
     border: 1px solid #dddddd;
+    position: relative;
 }
 
-div.aboutHeader {
+#contentHeader {
     padding-bottom: 20px;
     width: 100%;
     border-bottom: 1px solid #cccccc;
     overflow: hidden;
 }
 
-div.blue {
-    background-color: #4AB4DD;
-    height: 96px;
-    position: relative;
-}
-
-div.grey {
-    background-color: #666;
-    height: 80px;
-    padding-top: 16px;
-    position: absolute;
-    top: 16px;
-    width: 100%;
+#contentTitle {
+    color: #4aaaa5;
 }
 
 img {
     float: left;
-    padding-top: 20px;
-    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.portfolioImage {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+#headshot {
+    margin-top: 20px;
     height: 20%;
     width: 20%;
 }
 
-.content p {
-    padding-top: 20px;
-    margin: 0;
+div.image {
+    margin-top: 20px;
+    position: relative;
+    float: left;
+}
+
+h3 {
+    position: absolute;
+    bottom: 30px;
+    width: 300px;
+    background-color: #4aaaa5;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+
+h3:hover {
+    background-color: #4AB4DD;
 }
 
 footer {
@@ -125,7 +137,22 @@ footer {
 }
 
 footer p {
-    padding-top: 40px;
+    font-size:small;
     text-align: center;
     color:#cccccc;
+    margin-top: 20px;
+}
+
+#blueFooter {
+    background-color: #4AB4DD;
+    height: 50px;
+    position: relative;
+}
+
+#greyFooter {
+    background-color: #666;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
 }
