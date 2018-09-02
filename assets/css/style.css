@@ -105,6 +105,14 @@ img {
     position: relative;
 }
 
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 5px 5px 10px 5px #888888, -5px -5px 10px 5px #888888, -5px 5px 10px 5px #888888, 5px -5px 10px 5px #888888 ;
+}
+
 #headshot {
     margin-top: 20px;
     height: 20%;
@@ -115,6 +123,10 @@ div.image {
     margin-top: 20px;
     position: relative;
     float: left;
+}
+
+div.form-container {
+    margin-top: 20px;
 }
 
 h3 {
@@ -129,6 +141,10 @@ h3 {
 }
 
 h3:hover {
+    background-color: #4AB4DD;
+}
+
+.image:hover h3 {
     background-color: #4AB4DD;
 }
 
@@ -155,4 +171,48 @@ footer p {
     position: absolute;
     top: 10px;
     width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0 15px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+    overflow: auto;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 2px solid #4AB4DD;
+}
+
+input[type=submit]:hover {
+    background-color: #4AB4DD;
 }
