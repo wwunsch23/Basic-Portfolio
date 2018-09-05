@@ -73,13 +73,11 @@ h1 {
 
 #content {
     max-width: 960px;
-    margin: 20px auto;
-    margin-bottom:40px;
+    margin: 20px auto 0;
     background-color: #fff;
-    padding: 30px;
+    padding: 30px 30px 50px;
     overflow: hidden;
     border: 1px solid #dddddd;
-    position: relative;
 }
 
 #contentHeader {
@@ -149,7 +147,9 @@ h3:hover {
 }
 
 footer {
-    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    padding-top: 40px;
 }
 
 footer p {
@@ -161,7 +161,8 @@ footer p {
 
 #blueFooter {
     background-color: #4AB4DD;
-    height: 50px;
+    height: 50px; 
+    width: 100%;
     position: relative;
 }
 
@@ -169,7 +170,7 @@ footer p {
     background-color: #666;
     height: 40px;
     position: absolute;
-    top: 10px;
+    bottom: 0;
     width: 100%;
 }
 
